@@ -39,10 +39,7 @@ class PlacePicker {
             }
         }
 
-        fun setLocale(locale: Locale) {
-
-            this.defaultLocale = locale.language
-        }
+        fun setLocale(locale: Locale) = apply { this.defaultLocale = locale.language }
 
         fun setMapZoom(zoom: Float) = apply { this.zoom = zoom }
 
